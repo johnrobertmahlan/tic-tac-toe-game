@@ -12,21 +12,21 @@
         <h1>Cyberpunk Tic-Tac-Toe</h1>
     
         <!--Will eventually update 'X' dynamically; for now we'll hard-code it-->
-        <h3>Player X's Turn</h3>
+        <h3>Player <span></span>'s Turn</h3>
 
         <section id="gameboard">
             <!--This is where we'll represent our gameboard using 9 divs that we can style later-->
             <!--This is all just *representation*, in HTML, of what the site will look like-->
             <!--Then we need to style each div using class names based on their positioning-->
-            <div class="square bottom right">X</div>
-            <div class="square bottom"></div>
-            <div class="square bottom left"></div>
-            <div class="square bottom right">X</div>
-            <div class="square bottom"></div>
-            <div class="square bottom left"></div>
-            <div class="square right">O</div>
-            <div class="square"></div>
-            <div class="square left"></div>
+            <div data-index="0" class="square bottom right"></div>
+            <div data-index="1" class="square bottom"></div>
+            <div data-index="2" class="square bottom left"></div>
+            <div data-index="3" class="square bottom right"></div>
+            <div data-index="4" class="square bottom"></div>
+            <div data-index="5" class="square bottom left"></div>
+            <div data-index="6" class="square right"></div>
+            <div data-index="7" class="square"></div>
+            <div data-index="8" class="square left"></div>
         </section>
 
         <button>Reset</button>
