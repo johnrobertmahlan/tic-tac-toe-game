@@ -1,0 +1,44 @@
+/* Simple Reset */
+
+* {
+    box-sizing: border-box; /* keeps everything the same size no matter what*/
+    margin: 0; /* this guarantees that all our elements will be up against each other; nothing between them*/
+}
+
+main {
+    text-align: center;
+}
+
+/* Styling the board itself */
+
+#gameboard {
+    width: 600px; /* because we want a 3x3 grid, and the width of each square is 200px, we want the board to be 600px wide */
+    display: flex; /* this creates a "flex container" (Google flexbox) --> this turns everything inside the container into a "flex item" */
+    flex-wrap: wrap; /* this will allow the items to wrap multiple lines instead of being crammed against each other */
+    margin: 50px auto; /* top/bottom and left/right */
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    /* The next 3 properties are flexbox properties used to turn the squares into flex containers and then align their content along both axes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: 700;
+    font-family: Helvetica;
+}
+
+/* Styling the borders of the gameboard so it looks more like a tic-tac-toe board rather than 9 boxes */
+.left {
+    border-left: 2px solid black;
+}
+
+.right {
+    border-right: 2px solid black;
+}
+
+.bottom {
+    border-bottom: 2px solid black;
+}
